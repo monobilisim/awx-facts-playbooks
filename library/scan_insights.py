@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from ansible.module_utils.basic import * # noqa
 
@@ -9,7 +9,7 @@ short_description: Return insights id as fact data
 description:
     - Inspects the /etc/redhat-access-insights/machine-id file for insights id and returns the found id as fact data
 version_added: "2.3"
-options:
+options:a
 requirements: [ ]
 author: Chris Meyers
 '''
@@ -24,7 +24,7 @@ EXAMPLES = '''
 '''
 
 
-INSIGHTS_SYSTEM_ID_FILE='/etc/redhat-access-insights/machine-id'
+INSIGHTS_SYSTEM_ID_FILE='/etc/machine-id'
 
 
 def get_system_id(filname):
